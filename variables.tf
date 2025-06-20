@@ -5,19 +5,19 @@ variable "image_name" {
 }
 
 variable "container_name" {
-  description = "Name for the Docker container"
+  description = "ngnix_container"
   type        = string
   default     = "terraform-nginx-container"
 }
 
 variable "internal_port" {
-  description = "internal container port"
+  description = "internal ngnix port"
   type        = number
   default     = 80
 }
 
 variable "external_port" {
-  description = "external container port"
+  description = "external ngnix port"
   type        = number
   default     = 9090
 }
